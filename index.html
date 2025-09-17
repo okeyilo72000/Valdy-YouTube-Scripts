@@ -61,6 +61,26 @@
       font-size: 0.9rem;
       color: #888;
     }
+    .contact-form {
+  margin-top: 3rem;
+  text-align: left;
+}
+.contact-form h2 {
+  text-align: center;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 0.5rem auto;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.contact-form button {
+  display: block;
+  margin: 1rem auto;
+}
   </style>
 </head>
 <body>
@@ -74,9 +94,16 @@
     <a href="Valdy_YouTube_Script_Portfolio.pdf" class="btn" download>📄 Download My Portfolio</a>
     <a href="Valdy_YouTube_Script_Rate_Card.pdf" class="btn" download>💰 Download My Rate Card</a>
 
-    <div class="contact">
-      💌 Email me at: <a href="mailto:okeyilo72000@gmail.com">okeyilo72000@gmail.com</a>
-    </div>
+    <!-- Contact Form Section -->
+<div class="contact-form">
+  <h2>Contact Me</h2>
+  <form action="https://formspree.io/f/xpwjgbrw" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br><br>
+    <input type="email" name="_replyto" placeholder="Your Email" required><br><br>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br><br>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</div>
 
     <footer>
       &copy; 2025 Valdy – All rights reserved.
@@ -84,4 +111,3 @@
   </div>
 </body>
 </html>
-
